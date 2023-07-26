@@ -10,6 +10,7 @@ import AllExpenses from './screens/AllExpenses';
 import { GlobalStyles } from './constants/styles';
 import IconButton from './components/UI/IconButton';
 import ExpensesContextProvider from './store/expenses-context';
+// import Settings from './screens/Settings';
 
 const Stack = createNativeStackNavigator();
 const BottomTabs = createBottomTabNavigator();
@@ -56,7 +57,19 @@ function ExpensesOverview () {
   )
 }
 
+// ----------- Bottom Tab for a Settings Screen. Intended to be a Context editing window for global app settings
+// <BottomTabs.Screen
+//   name='Settings'
+//   component={Settings}
+//   options={{
+//     title: 'Settings',
+//     tabBarLabel: 'Settings',
+//     tabBarIcon: ({color, size}) => <SimpleLineIcons name='settings' size={size} color={color} />
+//   }}
+// /> 
+
 export default function App() {
+
   return (
     <>
       <StatusBar style="light" />

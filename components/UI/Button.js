@@ -22,17 +22,21 @@ const styles = StyleSheet.create({
   button: {
     borderRadius: 4,
     padding: 8,
-    backgroundColor: GlobalStyles.colors.primary500,
+    backgroundColor: GlobalStyles.colors.primary700,
+    borderWidth: 1,
+    borderColor: GlobalStyles.colors.primary100,
   },
   flat: {
-    backgroundColor: 'transparent',
+    backgroundColor: GlobalStyles.colors.primary100,
+    borderWidth: 2,
+    borderColor: GlobalStyles.colors.primary700,
   },
   buttonText: {
-    color: GlobalStyles.colors.primary50,
+    color: GlobalStyles.colors.primary100,
     textAlign: 'center',
   },
   flatText: {
-    color: GlobalStyles.colors.accent500,
+    color: GlobalStyles.colors.primary800,
   },
   pressed: {
     opacity: 0.75,
